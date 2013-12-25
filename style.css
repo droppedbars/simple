@@ -1,0 +1,394 @@
+/*
+Theme Name: Simple-Style
+Theme URI: none
+Author: Patrick Mauro
+Author URI: http://patrick.mauro.ca
+Description: A simple, yet stylish theme that flows to fit any screen.
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, gray, white, one-column, two-columns, right-sidebar, flexible-width, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: 
+
+*/
+/* fonts */
+.menuitem a
+{
+	font-family: Verdana, sans-serif;
+	font-style: normal;
+	color: #404040; 
+	text-decoration:none;
+}
+
+.page_item
+{
+	font-family: Verdana, sans-serif;
+	font-style: normal;
+	color: #404040; 
+	text-decoration:none;
+}
+
+ul, ol
+{
+    list-style-type: none;
+}
+
+.menuitem a:hover {text-decoration:underline;}
+a.sitename:hover {text-decoration:underline;}
+.showmore a:hover {text-decoration:underline;}
+
+.articletitle a {
+  font-family: Tahoma, sans-serif;
+  color: #404040;
+  text-decoration: none;
+}
+.articletitle a:hover {text-decoration:underline;}
+
+p.content
+{
+  font-family: Palatino, serif;
+}
+
+a.sitename
+{
+	color: #404040; 
+	text-decoration:none;
+}
+
+.showmore a
+{
+	color: #404040; 
+	font-family: Tahoma, sans-serif;
+	text-decoration:none;
+}
+
+.sitename
+{
+	font-family: Tahoma, sans-serif;
+}
+
+p.footertext
+{
+	font-family: Tahoma, sans-serif;
+}
+
+/* colouring */
+
+/* settings for all display types */
+	* {
+		margin: 0;
+	}	
+
+	html, body {
+		height: 100%;
+		width: 100%;
+	}
+
+	body
+	{
+		background-color: #E6E6E6;
+		background-image: none;
+	}
+
+
+/* small screens */
+
+
+@media handheld, screen {
+	#topmenubar
+	{
+		position: relative;
+		background-color: #BBBBBB;
+		height: 40px;
+		top: 10px;
+		width: 100%;
+
+	}
+	#sitetitle
+	{
+		position: relative;
+		background-color: transparent;
+		left: 20px;
+		top: 0px;	
+		height: 20px;
+		width: 200px;
+	}
+	#topmenu
+	{
+		position: relative;
+		background-color: transparent;
+	}
+	.mainblock
+	{
+		background-color: #D0D0D0;
+		position: relative;
+		top: 20px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		vertical-align: top;
+	}
+	.titleblock
+	{
+		background-color: transparent;
+		float: left;
+		padding-top: 5px;
+		width: 30%;
+	}	
+	.textblock
+	{
+		width: 65%;
+		float: right;
+		background-color: transparent;
+		padding-top: 30px;
+	}
+	.showmore
+	{
+		background-color: transparent;
+		position: relative;
+		clear: both;
+	}
+	#footer
+	{
+		background-color: #BBBBBB;
+		height: 35px;
+		position: relative;
+		width: 100%;
+		top: 30px;
+	}
+	#socialmedia
+	{
+		visibility: hidden;
+	}
+	.menuitem ul a
+	{
+		font-size: small;
+	}
+
+
+	h1.articletitle {
+
+	}
+
+	p.content
+	{
+	  text-align: justify;
+	  font-size: large;
+	}
+
+	.showmore a
+	{
+		direction: rtl;
+		text-align: justify;
+		font-size: medium;
+	}
+
+	.sitename
+	{
+		font-size: large;
+	}
+
+	p.footertext
+	{
+		font-size: small;
+		text-align: center;
+	}
+}
+/* small screens, 320-480px */
+
+@media handheld and (min-width: 350px), screen and (min-width: 350px) {
+	.menuitem a
+	{
+		font-size: medium;
+		/*display:inline;*/
+	}
+}
+
+/* insert other sizes of screens in here */
+
+/* general presentation */
+@media screen and (min-width: 481px) {
+	body
+	{
+		background-color: #E6E6E6;
+		background-image:url('assets/images/Guitar.jpg');
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: cover;
+		background-attachment: fixed;
+		height: 100%;
+	}
+
+	.push2
+	{
+		position: relative;
+		top: 200px;
+		height: 10px;
+		width: 100%;
+	}
+
+	#topmenubar
+	{
+		position: fixed;
+		height: 20px;
+		top: 10px;
+		width: 100%;
+		opacity: 0.92;
+		z-index: 1;
+	}
+	#sitetitle
+	{
+		position: relative;
+		background-color: transparent;
+		left: 50px;
+		top: 0px;	
+		height: 20px;
+		width: 200px;
+	}
+	#topmenu
+	{
+		position: absolute;
+		background-color: transparent;
+		right: 10%;
+		top: 0px;
+	}
+
+
+	.mainblock
+	{
+		background-color: #D0D0D0;
+		position: relative;
+		top: 190px;
+		width: 70%;
+		right: 10%;
+		float: right;
+		max-width: 600px;
+		opacity: 0.8;
+		vertical-align: top;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.titleblock
+	{
+		width: 30%;
+		float: left;
+		padding-top: 30px;
+		padding-right: 0px;
+		padding-left: 0px;
+		text-align: right;
+		vertical-align: text-top;
+	}	
+	.textblock
+	{
+		background-color: transparent;
+		float: right;
+		width: 60%;
+		padding-top: 30px;
+		padding-left: 30px;
+		padding-right: 20px;
+	}
+	.showmore
+	{
+		background-color: transparent;
+		position: relative;
+		text-align: right;
+		padding-bottom: 20px;
+		width: 100%;
+		clear: both;
+	}
+	.spacer
+	{
+		clear: both;
+		position: relative;
+		top: 190px;
+		height: 30px;
+		width: 100%;
+		background-color: transparent;
+	}
+	#footer
+	{
+		background-color: #BBBBBB;
+		height: 35px;
+		position: relative;
+		top: 200px;
+		clear: both;
+		width: 100%;
+		opacity: 0.92;
+	}
+	#socialmedia
+	{
+		visibility: visible;
+		background-color: transparent;
+		position: absolute;
+		right: 30px;
+		bottom: 0px;
+		opacity: 0.8;
+	}
+	.menuitem ul li a
+	{
+		display: inline-block;
+		font-size: medium;
+		padding-bottom: 2px;
+	}
+
+	.page_item
+	{
+		font-size: medium;
+		display: inline-block;
+		padding-right: 30px;
+	}
+
+	.page_item .children {
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		display: none;
+		position: absolute;
+		width: 150px;
+		background-color: #CCCCCC;
+	}
+
+	.children li {
+		display: block;
+	}
+
+	.children .page_item ul, li {
+		display: block;
+		position: relative;
+	}
+	.children .page_item li a {
+		margin-left: 10px; /* only moves for first nesting */
+	}
+	.children > .page_item a {
+		font-size: small;
+	}
+
+	.menuitem li.page_item_has_children:hover > ul 
+	{ 
+		display: block; 
+	}
+
+	p.content
+	{
+	  text-align: justify;
+	}
+
+	.showmore a
+	{
+		font-size: small;
+		padding-right: 30px;
+	}
+
+	.sitename
+	{
+		font-size: large;
+	}
+
+	p.footertext
+	{
+		font-size: small;
+		text-align: center;
+	}
+
+}
